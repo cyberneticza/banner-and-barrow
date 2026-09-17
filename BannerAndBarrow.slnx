@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BannerAndBarrow.Game/BannerAndBarrow.Game.csproj" />
+    <Project Path="src/BannerAndBarrow.Sandbox/BannerAndBarrow.Sandbox.csproj" />
+    <Project Path="src/BannerAndBarrow.Simulation/BannerAndBarrow.Simulation.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BannerAndBarrow.Tests/BannerAndBarrow.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,4 @@
+Sfx/*.ogg: Kenney 'RPG Audio' and 'Impact Sounds', CC0 (https://kenney.nl).
+Sfx/*.wav: synthesized by tools/audio/build_audio.py for this project.
+Voice/*.wav: placeholder shouts rendered with the Windows speech synthesizer by tools/audio/build_audio.py.
+Replace Voice/ with real recordings (same file names) before distributing the game.

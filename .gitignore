@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+TestResults/
+Content/bin/
+Content/obj/
+
+# Release builds (scripts/publish.ps1)
+artifacts/

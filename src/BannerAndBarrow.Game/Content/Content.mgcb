@@ -1,0 +1,2138 @@
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Fonts/Default.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/Default.spritefont
+
+#begin Fonts/Small.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/Small.spritefont
+
+# Kenney "Medieval RTS" (CC0) - see Content/Kenney/medieval-rts/License.txt
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_01.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_01.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_02.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_02.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_03.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_03.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_04.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_04.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_05.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_05.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_06.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_06.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_07.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_07.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_08.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_08.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_09.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_09.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_10.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_10.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_11.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_11.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_12.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_12.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_13.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_13.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_14.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_14.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_15.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_15.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_16.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_16.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_17.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_17.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_18.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_18.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_19.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_19.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_20.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_20.png
+
+#begin Kenney/medieval-rts/Environment/medievalEnvironment_21.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Environment/medievalEnvironment_21.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_01.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_01.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_02.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_02.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_03.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_03.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_04.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_04.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_05.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_05.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_06.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_06.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_07.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_07.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_08.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_08.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_09.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_09.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_10.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_10.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_11.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_11.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_12.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_12.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_13.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_13.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_14.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_14.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_15.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_15.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_16.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_16.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_17.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_17.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_18.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_18.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_19.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_19.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_20.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_20.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_21.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_21.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_22.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_22.png
+
+#begin Kenney/medieval-rts/Structure/medievalStructure_23.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Structure/medievalStructure_23.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_01.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_01.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_02.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_02.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_03.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_03.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_04.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_04.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_05.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_05.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_06.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_06.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_07.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_07.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_08.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_08.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_09.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_09.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_10.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_10.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_11.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_11.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_12.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_12.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_13.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_13.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_14.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_14.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_15.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_15.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_16.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_16.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_17.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_17.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_18.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_18.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_19.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_19.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_20.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_20.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_21.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_21.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_22.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_22.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_23.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_23.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_24.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_24.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_25.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_25.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_26.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_26.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_27.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_27.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_28.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_28.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_29.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_29.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_30.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_30.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_31.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_31.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_32.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_32.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_33.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_33.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_34.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_34.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_35.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_35.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_36.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_36.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_37.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_37.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_38.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_38.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_39.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_39.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_40.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_40.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_41.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_41.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_42.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_42.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_43.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_43.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_44.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_44.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_45.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_45.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_46.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_46.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_47.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_47.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_48.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_48.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_49.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_49.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_50.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_50.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_51.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_51.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_52.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_52.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_53.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_53.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_54.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_54.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_55.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_55.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_56.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_56.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_57.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_57.png
+
+#begin Kenney/medieval-rts/Tile/medievalTile_58.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Tile/medievalTile_58.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_01.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_01.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_02.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_02.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_03.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_03.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_04.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_04.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_05.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_05.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_06.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_06.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_07.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_07.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_08.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_08.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_09.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_09.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_10.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_10.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_11.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_11.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_12.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_12.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_13.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_13.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_14.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_14.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_15.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_15.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_16.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_16.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_17.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_17.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_18.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_18.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_19.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_19.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_20.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_20.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_21.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_21.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_22.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_22.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_23.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_23.png
+
+#begin Kenney/medieval-rts/Unit/medievalUnit_24.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyEnabled=False
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Kenney/medieval-rts/Unit/medievalUnit_24.png
+
+# ---------------------------------------------------------------------------
+# ART: drop Kenney PNGs into Content/Kenney/ and add one block per texture, e.g.
+#
+# #begin Kenney/medievalTile_57.png
+# /importer:TextureImporter
+# /processor:TextureProcessor
+# /processorParam:ColorKeyEnabled=False
+# /processorParam:PremultiplyAlpha=True
+# /processorParam:TextureFormat=Color
+# /build:Kenney/medievalTile_57.png
+#
+# then map a sprite key to "Kenney/medievalTile_57" in Assets/sprites.json.
+# ---------------------------------------------------------------------------
+
+# Sound: generated by tools/audio/build_audio.py (Kenney CC0, synthesized, and placeholder TTS voices)
+#begin Audio/Sfx/chop_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/chop_0.ogg
+
+#begin Audio/Sfx/chop_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/chop_1.ogg
+
+#begin Audio/Sfx/chop_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/chop_2.ogg
+
+#begin Audio/Sfx/chop_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/chop_3.ogg
+
+#begin Audio/Sfx/mine_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/mine_0.ogg
+
+#begin Audio/Sfx/mine_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/mine_1.ogg
+
+#begin Audio/Sfx/mine_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/mine_2.ogg
+
+#begin Audio/Sfx/mine_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/mine_3.ogg
+
+#begin Audio/Sfx/mine_4.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/mine_4.ogg
+
+#begin Audio/Sfx/hammer_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/hammer_0.ogg
+
+#begin Audio/Sfx/hammer_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/hammer_1.ogg
+
+#begin Audio/Sfx/hammer_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/hammer_2.ogg
+
+#begin Audio/Sfx/hammer_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/hammer_3.ogg
+
+#begin Audio/Sfx/hammer_4.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/hammer_4.ogg
+
+#begin Audio/Sfx/anvil_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/anvil_0.ogg
+
+#begin Audio/Sfx/anvil_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/anvil_1.ogg
+
+#begin Audio/Sfx/anvil_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/anvil_2.ogg
+
+#begin Audio/Sfx/anvil_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/anvil_3.ogg
+
+#begin Audio/Sfx/anvil_4.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/anvil_4.ogg
+
+#begin Audio/Sfx/clash_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_0.ogg
+
+#begin Audio/Sfx/clash_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_1.ogg
+
+#begin Audio/Sfx/clash_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_2.ogg
+
+#begin Audio/Sfx/clash_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_3.ogg
+
+#begin Audio/Sfx/clash_4.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_4.ogg
+
+#begin Audio/Sfx/clash_5.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_5.ogg
+
+#begin Audio/Sfx/clash_6.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_6.ogg
+
+#begin Audio/Sfx/clash_7.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_7.ogg
+
+#begin Audio/Sfx/clash_8.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_8.ogg
+
+#begin Audio/Sfx/clash_9.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/clash_9.ogg
+
+#begin Audio/Sfx/armour_hit_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/armour_hit_0.ogg
+
+#begin Audio/Sfx/armour_hit_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/armour_hit_1.ogg
+
+#begin Audio/Sfx/armour_hit_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/armour_hit_2.ogg
+
+#begin Audio/Sfx/armour_hit_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/armour_hit_3.ogg
+
+#begin Audio/Sfx/armour_hit_4.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/armour_hit_4.ogg
+
+#begin Audio/Sfx/spear_hit_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/spear_hit_0.ogg
+
+#begin Audio/Sfx/spear_hit_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/spear_hit_1.ogg
+
+#begin Audio/Sfx/spear_hit_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/spear_hit_2.ogg
+
+#begin Audio/Sfx/spear_hit_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/spear_hit_3.ogg
+
+#begin Audio/Sfx/spear_hit_4.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/spear_hit_4.ogg
+
+#begin Audio/Sfx/arrow_hit_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/arrow_hit_0.ogg
+
+#begin Audio/Sfx/arrow_hit_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/arrow_hit_1.ogg
+
+#begin Audio/Sfx/arrow_hit_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/arrow_hit_2.ogg
+
+#begin Audio/Sfx/arrow_hit_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/arrow_hit_3.ogg
+
+#begin Audio/Sfx/arrow_hit_4.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/arrow_hit_4.ogg
+
+#begin Audio/Sfx/arrow_hit_5.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/arrow_hit_5.ogg
+
+#begin Audio/Sfx/arrow_hit_6.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/arrow_hit_6.ogg
+
+#begin Audio/Sfx/arrow_hit_7.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/arrow_hit_7.ogg
+
+#begin Audio/Sfx/step_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/step_0.ogg
+
+#begin Audio/Sfx/step_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/step_1.ogg
+
+#begin Audio/Sfx/step_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/step_2.ogg
+
+#begin Audio/Sfx/step_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/step_3.ogg
+
+#begin Audio/Sfx/step_4.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/step_4.ogg
+
+#begin Audio/Sfx/scythe_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/scythe_0.ogg
+
+#begin Audio/Sfx/scythe_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/scythe_1.ogg
+
+#begin Audio/Sfx/sow_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/sow_0.ogg
+
+#begin Audio/Sfx/sow_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/sow_1.ogg
+
+#begin Audio/Sfx/sow_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/sow_2.ogg
+
+#begin Audio/Sfx/sow_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/sow_3.ogg
+
+#begin Audio/Sfx/coins_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/coins_0.ogg
+
+#begin Audio/Sfx/coins_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/coins_1.ogg
+
+#begin Audio/Sfx/place_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/place_0.ogg
+
+#begin Audio/Sfx/place_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/place_1.ogg
+
+#begin Audio/Sfx/complete_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/complete_0.ogg
+
+#begin Audio/Sfx/complete_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/complete_1.ogg
+
+#begin Audio/Sfx/complete_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/complete_2.ogg
+
+#begin Audio/Sfx/recruit_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/recruit_0.ogg
+
+#begin Audio/Sfx/recruit_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/recruit_1.ogg
+
+#begin Audio/Sfx/recruit_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/recruit_2.ogg
+
+#begin Audio/Sfx/collapse_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/collapse_0.ogg
+
+#begin Audio/Sfx/collapse_1.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/collapse_1.ogg
+
+#begin Audio/Sfx/collapse_2.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/collapse_2.ogg
+
+#begin Audio/Sfx/collapse_3.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/collapse_3.ogg
+
+#begin Audio/Sfx/click_0.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/click_0.ogg
+
+#begin Audio/Sfx/bow_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/bow_0.wav
+
+#begin Audio/Sfx/bow_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/bow_1.wav
+
+#begin Audio/Sfx/bow_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/bow_2.wav
+
+#begin Audio/Sfx/whoosh_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/whoosh_0.wav
+
+#begin Audio/Sfx/whoosh_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/whoosh_1.wav
+
+#begin Audio/Sfx/whoosh_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/whoosh_2.wav
+
+#begin Audio/Sfx/horn_own_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/horn_own_0.wav
+
+#begin Audio/Sfx/horn_enemy_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/horn_enemy_0.wav
+
+#begin Audio/Sfx/drums_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/drums_0.wav
+
+#begin Audio/Sfx/fire_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/fire_0.wav
+
+#begin Audio/Sfx/roar_enemy_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/roar_enemy_0.wav
+
+#begin Audio/Sfx/roar_enemy_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/roar_enemy_1.wav
+
+#begin Audio/Sfx/roar_enemy_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/roar_enemy_2.wav
+
+#begin Audio/Sfx/cheer_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/cheer_0.wav
+
+#begin Audio/Sfx/cheer_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Sfx/cheer_1.wav
+
+#begin Audio/Voice/voice_attack_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_attack_0.wav
+
+#begin Audio/Voice/voice_attack_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_attack_1.wav
+
+#begin Audio/Voice/voice_attack_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_attack_2.wav
+
+#begin Audio/Voice/voice_attack_3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_attack_3.wav
+
+#begin Audio/Voice/voice_attack_4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_attack_4.wav
+
+#begin Audio/Voice/voice_attack_5.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_attack_5.wav
+
+#begin Audio/Voice/voice_charge_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_charge_0.wav
+
+#begin Audio/Voice/voice_charge_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_charge_1.wav
+
+#begin Audio/Voice/voice_charge_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_charge_2.wav
+
+#begin Audio/Voice/voice_charge_3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_charge_3.wav
+
+#begin Audio/Voice/voice_charge_4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_charge_4.wav
+
+#begin Audio/Voice/voice_charge_5.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_charge_5.wav
+
+#begin Audio/Voice/voice_loose_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_loose_0.wav
+
+#begin Audio/Voice/voice_loose_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_loose_1.wav
+
+#begin Audio/Voice/voice_loose_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_loose_2.wav
+
+#begin Audio/Voice/voice_loose_3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_loose_3.wav
+
+#begin Audio/Voice/voice_rally_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_rally_0.wav
+
+#begin Audio/Voice/voice_rally_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_rally_1.wav
+
+#begin Audio/Voice/voice_rally_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_rally_2.wav
+
+#begin Audio/Voice/voice_rally_3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_rally_3.wav
+
+#begin Audio/Voice/voice_rally_4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_rally_4.wav
+
+#begin Audio/Voice/voice_rally_5.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_rally_5.wav
+
+#begin Audio/Voice/voice_rally_6.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_rally_6.wav
+
+#begin Audio/Voice/voice_ready_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_ready_0.wav
+
+#begin Audio/Voice/voice_ready_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_ready_1.wav
+
+#begin Audio/Voice/voice_ready_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_ready_2.wav
+
+#begin Audio/Voice/voice_victory_0.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_victory_0.wav
+
+#begin Audio/Voice/voice_victory_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_victory_1.wav
+
+#begin Audio/Voice/voice_victory_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_victory_2.wav
+
+#begin Audio/Voice/voice_victory_3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:Audio/Voice/voice_victory_3.wav
+

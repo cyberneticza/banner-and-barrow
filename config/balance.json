@@ -1,0 +1,288 @@
+// ================================================================================================
+// BALANCE CONFIG — every gameplay number lives here. Edit and restart the game; no rebuild needed.
+// Units: distances in Tiles, times in seconds, speeds in Tiles/second, costs in resource units.
+// Values tagged TUNING are the ones most likely to need iteration.
+// ================================================================================================
+{
+  "simulation": {
+    "ticksPerSecond": 20,
+    "maxSoldiersPerPlayer": 200 // TUNING: army cap per Player
+  },
+
+  "movement": {
+    "workerSpeed": 4.0,                // off-road civilians move at 4.0 × 0.5 = 2 tiles/s, on dirt roads 4
+    "workerRadius": 0.25,
+    // TUNING: road speed multipliers. Civilians crawl off-road; Soldiers only get a bonus on roads.
+    "civilian": { "offRoad": 0.5, "dirt": 1.0, "stone": 1.5 },   // TUNING: roads double Worker speed
+    "military": { "offRoad": 1.0, "dirt": 1.25, "stone": 1.5 },
+    "civilianOffRoadRouteCost": 2.5,    // TUNING: Workers plan as if grass costs 2.5x more on top of being slower -> they stick to roads
+    "forestMultiplier": 0.6,
+    "hillsMultiplier": 0.8,
+    "flowFieldCacheCapacity": 128,
+    "flowFieldRebuildsPerTick": 3,      // budget for rebuilding stale flow fields after map changes
+    "flowFieldMinorStaleTicks": 400,    // tree changes only trigger a rebuild after this many ticks
+    "slotDirectDistance": 5,            // Soldiers this close to their slot walk straight to it
+    "regimentMaxLag": 4,                // banner slows when Soldiers fall this far behind
+    "lagSlowdown": 0.5,                 // ...to this fraction of its speed
+    "stragglerDistance": 10,            // ...but ignores Soldiers further than this (stuck or chasing)
+    "steering": {
+      "acceleration": 12,               // TUNING: tiles/s² — lower = floatier, higher = twitchier
+      "separationWeight": 1.5,          // TUNING: push between neighbours
+      "separationPadding": 0.2,
+      "avoidanceWeight": 1.0,           // TUNING: predictive sidestep strength
+      "avoidanceLookahead": 1.0,
+      "directSeekMaxDistance": 10,
+      "civilianDirectSeekMaxDistance": 2, // Workers only cut straight across the last 2 tiles; otherwise they follow roads
+      "maxPushPerTick": 0.125,
+      "stuckTicks": 20,
+      "stuckAcceptDistance": 1.5,
+      "idleYieldFactor": 3,
+      "civilianSeparationFactor": 0.25   // Workers walk through each other; this is how much they still spread out
+    }
+  },
+
+  "territory": {
+    "keepReach": 16,                    // TUNING
+    "storehouseReach": 10,              // TUNING
+    "regimentPresence": 6,              // TUNING
+    "outpostPresence": 10,
+    "strongholdPresence": 14,
+    "presenceRecomputeTicks": 5,
+    "fogOfWar": true,                   // vision = own Territory + own Presence; the AI plays by the same rules
+    "visionBeyondRange": 2,             // TUNING: Regiments and forts see this far past their longest shot (at least their Presence)
+    "revealAttackerSeconds": 6,         // TUNING: enemies that attack you are visible for this long, wherever they are
+    "rebuildWindowSeconds": 120,        // TUNING: time to Repair a Ruin before Burning buildings are lost
+    "outpostMinSpacing": 12,
+    "storehouseCostMultiplier": 1.5,    // TUNING: cost × 1.5^(Storehouses owned)
+    "storehouseCostDistanceWeight": 0.02, // TUNING: +2% cost per tile from the Keep
+    "ruinRepairCostFraction": 0.5,
+    "storehouseNeighbourRadius": 24,
+    "demandMaxHops": 4
+  },
+
+  "economy": {
+    "startingStock": { "Wood": 260, "Stone": 160, "Iron": 40, "Food": 100, "Gold": 40, "Bows": 12, "Shields": 6, "Swords": 6, "Pikes": 0, "Armour": 6 },
+    "keepWorkerRoom": 10,
+    "workerHp": 30,                     // TUNING: Soldiers can kill Workers; a replacement spawns and walks to the job
+    "workerSpawnIntervalSeconds": 1,    // at most one new Worker per second (also re-staffing after deaths)
+    "workerCarryCapacity": 5,
+    "carrierCapacity": 10,
+    "buildersBase": 3,
+    "buildersPerSite": 1,
+    "buildersMax": 8,
+    "buildWorkPerSecond": 1.0,
+    "demolishTimeFraction": 0.4,        // tearing down takes 40% of the build time
+    "demolishRefundFraction": 0.5,      // and returns half the building's cost
+    "storehouseStartCarriers": 2,
+    "carriersPerPurchase": 2,
+    "storehouseMaxCarriers": 8,
+    "carrierPurchaseCost": { "Food": 15 },
+    "storehouseMaxUpgrades": 1,
+    "storehouseUpgradeCapacityMultiplier": 2,
+    "storehouseUpgradeCost": { "Wood": 40, "Stone": 40 },
+    "productionRadius": 8,
+    "goodsStockTarget": 10,             // TUNING: after orders are filled, workshops stock each item up to this many
+    "upgradeRadius": 16,                // Regiments this close to a Barracks can be upgraded (Spearmen -> Pikemen)
+    "woodPerForestTile": 12,
+    "stonePerDeposit": 400,
+    "ironPerDeposit": 400,
+    "treeRegrowSeconds": 180,
+    "repairDelaySeconds": 10,           // TUNING: Builders repair damaged buildings once they haven't been attacked for this long
+    "repairFractionPerSecond": 0.02,    // TUNING: each repairing Builder restores 2% of max HP per second ...
+    "fireDousePerSecond": 0.03,         // ... and puts out this much Fire
+    "maxRepairersPerBuilding": 2,
+    "farmFieldRadius": 4,               // Farmers sow and harvest Fields within this radius of the Farm
+    "farmFields": 8,                    // TUNING: Fields each Farm keeps planted
+    "sowSeconds": 3,
+    "cropGrowSeconds": 50,              // TUNING: sowing to harvest
+    "workerSpawnFood": 1,               // TUNING: a new Worker costs this much Food
+    "mealFood": 1,                      // TUNING: each Worker eats this much ...
+    "mealIntervalSeconds": 120,         // ... this often, walking to a Storehouse for it
+    "hungryWorkSpeed": 0.5,             // TUNING: Hungry Workers (nothing to eat) work at this speed
+    "taxGoldPerHouse": 2,
+    "taxGoldMaxPerCycle": 12,
+    "logisticsIntervalSeconds": 1,
+    "starvedAfterSeconds": 10
+  },
+
+  // size = footprint in tiles (square). workSeconds = one production cycle.
+  // batchSize (TUNING): output piles up at the building until a full batch is ready, then it is carried to a Storehouse.
+  "buildings": {
+    "Keep":       { "size": 4, "hp": 3000, "placeable": false, "storageCapacity": 400, "workerRoom": 10 },
+    "Storehouse": { "size": 3, "hp": 800,  "cost": { "Wood": 30, "Stone": 20 }, "buildSeconds": 35, "storageCapacity": 150 },
+    "House":      { "size": 2, "hp": 300,  "cost": { "Wood": 20, "Stone": 5 },  "buildSeconds": 18, "workerRoom": 6 },
+    "Woodcutter": { "size": 2, "hp": 250,  "cost": { "Wood": 15 },              "buildSeconds": 15, "workerSlots": 1, "workSeconds": 4,  "batchSize": 9, "outputs": { "Wood": 3 } },
+    "Quarry":     { "size": 2, "hp": 250,  "cost": { "Wood": 20 },              "buildSeconds": 18, "workerSlots": 1, "workSeconds": 6,  "batchSize": 9, "outputs": { "Stone": 3 } },
+    "IronMine":   { "size": 2, "hp": 300,  "cost": { "Wood": 25, "Stone": 10 }, "buildSeconds": 22, "workerSlots": 1, "workSeconds": 6,  "batchSize": 6, "outputs": { "Iron": 3 } },
+    "Farm":       { "size": 3, "hp": 250,  "cost": { "Wood": 25, "Stone": 5 },  "buildSeconds": 20, "workerSlots": 1, "workSeconds": 4, "batchSize": 9, "outputs": { "Food": 3 } },   // workSeconds = harvesting one Field
+    // Workshops: each cycle they pick a recipe - goods on order first, then whatever is below goodsStockTarget.
+    // TUNING: recipes are per cycle (2 items). Iron is the scarce input, so keep iron per Soldier low.
+    "Smithy":      { "size": 2, "hp": 350, "cost": { "Wood": 25, "Stone": 20 }, "buildSeconds": 25, "workerSlots": 1, "batchSize": 4,
+                     "recipes": [ { "output": "Swords", "amount": 2, "inputs": { "Iron": 1 }, "workSeconds": 7 },
+                                  { "output": "Pikes",  "amount": 2, "inputs": { "Iron": 1, "Wood": 2 }, "workSeconds": 6 },
+                                  { "output": "Armour", "amount": 2, "inputs": { "Iron": 2 }, "workSeconds": 9 } ] },
+    "Fletcher":    { "size": 2, "hp": 300, "cost": { "Wood": 25, "Stone": 10 }, "buildSeconds": 20, "workerSlots": 1, "batchSize": 4,
+                     "recipes": [ { "output": "Bows", "amount": 2, "inputs": { "Wood": 2 }, "workSeconds": 6 } ] },
+    "ShieldMaker": { "size": 2, "hp": 300, "cost": { "Wood": 25, "Stone": 15 }, "buildSeconds": 22, "workerSlots": 1, "batchSize": 4,
+                     "recipes": [ { "output": "Shields", "amount": 2, "inputs": { "Wood": 2, "Iron": 1 }, "workSeconds": 7 } ] },
+    "TaxOffice":  { "size": 2, "hp": 350,  "cost": { "Wood": 20, "Stone": 25 }, "buildSeconds": 25, "workerSlots": 1, "workSeconds": 15, "batchSize": 8, "outputs": { "Gold": 1 } },
+    "Barracks":   { "size": 3, "hp": 900,  "cost": { "Wood": 40, "Stone": 30 }, "buildSeconds": 35 },   // Spearmen, Pikemen, Men-at-Arms
+    "Archery":    { "size": 3, "hp": 800,  "cost": { "Wood": 45, "Stone": 20 }, "buildSeconds": 30 },   // Archers, Longbowmen
+    "Stable":     { "size": 3, "hp": 900,  "cost": { "Wood": 50, "Stone": 30, "Iron": 10 }, "buildSeconds": 40 },   // Knights
+    // Walls and Gates: one tile each, dragged out in lines. They can be raised over forest (the trees are cleared).
+    "Wall":       { "size": 1, "hp": 600,  "cost": { "Stone": 4 },  "buildSeconds": 5 },
+    "Gate":       { "size": 1, "hp": 700,  "cost": { "Stone": 4, "Wood": 8 }, "buildSeconds": 9 },
+    "Outpost":    { "size": 2, "hp": 700,  "cost": { "Wood": 30, "Stone": 20 }, "buildSeconds": 25 },
+    "Stronghold": { "size": 2, "hp": 2000, "placeable": false }
+  },
+
+  // armour/penetration: damage factor = clamp(1 + (penetration - armour) * penetrationScale, min, max)
+  // regimentSize = Soldiers per recruit (small squads, trained quickly); maxRegimentSize = cap when merging squads (M).
+  "soldiers": {
+    "Spearmen": {
+      // TUNING: levy spearmen - cheap (Food only), weak and poorly armed. Upgrade them into Pikemen.
+      "hp": 80, "armour": 1, "speed": 1.9, "radius": 0.3,
+      "melee": { "damage": 6, "penetration": 2, "range": 1.1, "cooldownSeconds": 1.2 },
+      "bonusVsMounted": 1.5,
+      "regimentSize": 6, "maxRegimentSize": 24, "recruitSeconds": 6, "recruitedAt": "Barracks",
+      "recruitCost": { "Food": 6 },
+      "formations": [ "Line", "Column", "Loose" ]
+    },
+    "Pikemen": {
+      // TUNING: upgraded Spearmen - pikes and armour, long reach, deadly against cavalry.
+      "hp": 110, "armour": 5, "speed": 1.6, "radius": 0.3,
+      "melee": { "damage": 12, "penetration": 5, "range": 1.5, "cooldownSeconds": 1.3 },
+      "bonusVsMounted": 2.5,
+      "regimentSize": 6, "maxRegimentSize": 24, "recruitSeconds": 10, "recruitedAt": "Barracks",
+      "recruitCost": { "Pikes": 6, "Armour": 6, "Food": 6 },
+      "upgradeFrom": "Spearmen", "upgradeCostPerSoldier": { "Pikes": 1, "Armour": 1 },
+      "formations": [ "Line", "Column", "Loose" ]
+    },
+    "MenAtArms": {
+      "hp": 130, "armour": 6, "speed": 1.5, "radius": 0.32,
+      "melee": { "damage": 15, "penetration": 5, "range": 0.8, "cooldownSeconds": 1.1 },
+      "regimentSize": 6, "maxRegimentSize": 24, "recruitSeconds": 12, "recruitedAt": "Barracks",
+      "recruitCost": { "Swords": 6, "Shields": 6, "Armour": 6, "Food": 6, "Gold": 3 }, "shield": true,
+      "formations": [ "Line", "Column", "Wedge", "Loose" ]
+    },
+    "Archers": {
+      "hp": 70, "armour": 1, "speed": 1.9, "radius": 0.28,
+      "melee": { "damage": 5, "penetration": 1, "range": 0.7, "cooldownSeconds": 1.3 },
+      // TUNING: shortbow — rapid volleys (0.75s, 0.5s when holding ground), light arrows weak against armour
+      "ranged": { "damage": 2.5, "penetration": 2, "range": 11, "minRange": 2, "cooldownSeconds": 0.75, "projectileSpeed": 22, "spreadPerTile": 0.035 },
+      "regimentSize": 6, "maxRegimentSize": 24, "recruitSeconds": 8, "recruitedAt": "Archery",
+      "recruitCost": { "Bows": 6, "Food": 5 },
+      "formations": [ "Line", "Column", "Loose" ]
+    },
+    "Longbowmen": {
+      "hp": 80, "armour": 2, "speed": 1.8, "radius": 0.28,
+      "melee": { "damage": 6, "penetration": 1, "range": 0.7, "cooldownSeconds": 1.3 },
+      // TUNING: longbow — ~1.8x archer range, much deadlier per arrow and against armour, slightly slower to draw
+      "ranged": { "damage": 7, "penetration": 8, "range": 20, "minRange": 2, "cooldownSeconds": 1.25, "projectileSpeed": 28, "spreadPerTile": 0.025 },
+      "regimentSize": 6, "maxRegimentSize": 24, "recruitSeconds": 12, "recruitedAt": "Archery",
+      "recruitCost": { "Bows": 12, "Food": 5, "Gold": 3 },
+      "formations": [ "Line", "Column", "Loose" ]
+    },
+    "Knights": {
+      "hp": 180, "armour": 7, "speed": 3.5, "radius": 0.45, "isMounted": true,
+      "melee": { "damage": 18, "penetration": 5, "range": 1.0, "cooldownSeconds": 1.3 },
+      "chargeMultiplier": 2.5,            // TUNING: first hit after charging at speed
+      "regimentSize": 3, "maxRegimentSize": 12, "recruitSeconds": 16, "recruitedAt": "Stable",
+      "recruitCost": { "Swords": 3, "Shields": 3, "Armour": 3, "Food": 9, "Gold": 6 }, "shield": true,
+      "formations": [ "Line", "Column", "Wedge", "Loose" ]
+    }
+  },
+
+  // TUNING: formation effects. "front"/"flank"/"rear" is decided by the defending Regiment's facing.
+  "formations": {
+    "Line":       { "shape": "Grid",  "width": 8, "spacing": 1.0,  "speedMultiplier": 1.0,
+                    "flankMultiplier": 1.5, "rearMultiplier": 2.0 },
+    "Column":     { "shape": "Grid",  "width": 2, "spacing": 0.9,  "speedMultiplier": 1.25,
+                    "flankMultiplier": 2.0, "rearMultiplier": 2.0, "outgoingMeleeMultiplier": 0.8, "cohesionLossMultiplier": 1.25 },
+    "Wedge":      { "shape": "Wedge", "width": 0, "spacing": 1.0,  "speedMultiplier": 1.0,
+                    "flankMultiplier": 1.75, "rearMultiplier": 2.0, "outgoingMeleeMultiplier": 1.15, "chargeBonusMultiplier": 1.5 },
+    "Loose":      { "shape": "Grid",  "width": 6, "spacing": 1.8,  "speedMultiplier": 1.1,
+                    "allRangedMultiplier": 0.6, "allMeleeMultiplier": 1.25, "flankMultiplier": 1.25, "rearMultiplier": 1.5,
+                    "outgoingMeleeMultiplier": 0.8, "cohesionLossMultiplier": 1.2 }
+  },
+
+  "combat": {
+    "penetrationScale": 0.12,             // TUNING: how much armour matters
+    "minDamageFactor": 0.15,
+    "maxDamageFactor": 1.6,
+    "engageRadius": 8,
+    "leashRadius": 14,
+    "soldierAggroRadius": 3,
+    "cohesionMax": 100,
+    "cohesionLossPerCasualty": 4,         // TUNING
+    "cohesionLossPerFlankHit": 0.5,
+    "cohesionRecoveryPerSecond": 2,
+    "cohesionRecoveryDelaySeconds": 5,
+    "brokenThreshold": 25,
+    "brokenDamageDealtMultiplier": 0.5,
+    "rangedMeleeFallbackDistance": 2,
+    "shieldRangedDamageMultiplier": 0.55, // TUNING: Soldiers with shields raise them against arrows
+    "rangedMeleePenalty": 0.5,            // archers fighting hand-to-hand
+    "hillsRangeMultiplier": 1.2,
+    "forestArrowBlockChance": 0.4,
+    "projectileHitRadius": 0.45,
+    "friendlyFire": true,
+    "buildingMeleeDamageMultiplier": 1.0,
+    "buildingRangedDamageMultiplier": 0.15,   // unused: arrows no longer damage buildings
+    "wallShotRangeMultiplier": 0.6,     // TUNING: shooting over an enemy wall: range cut to 60% ...
+    "wallShotSpreadMultiplier": 2.0,    // ... and twice the spread, so roughly half the arrows hit the wall
+    "firePerTorchDamage": 2.0,          // TUNING: torches add Fire (0..1) = this x damage / max HP: a House catches quickly, a Keep takes a real siege
+    "firePerArrowDamage": 0.5,
+    "fireDamageFractionPerSecond": 0.02, // TUNING: at full Fire a building loses 2% of max HP per second
+    "fireSelfSustaining": 0.6,          // TUNING: fires this big keep growing until the building burns down
+    "fireGrowthPerSecond": 0.01,
+    "fireDecayPerSecond": 0.03,         // smaller fires die down once the attack stops ...
+    "fireDecayDelaySeconds": 8,         // ... for this long
+    "chargeMinSpeedFraction": 0.6,
+    "chargeCooldownSeconds": 10,
+    "kiteTriggerDistance": 6,             // TUNING: ranged Regiments fall back when enemy melee gets this close...
+    "kiteStepDistance": 7,                // ...by this far, then shoot again
+    "kiteCooldownSeconds": 3,
+    "frontDotThreshold": 0.5,
+    "rearDotThreshold": -0.5,
+    // TUNING: Battle Groups (several Regiments moved together). Ranks: front melee, second melee, archers, longbows; Knights on flanks.
+    "battleGroups": {
+      "threatRadius": 22,               // enemy melee this close decides the front rank: Spearmen vs Knights, Men-at-Arms vs infantry
+      "minSwapDistance": 6,             // too late to swap ranks once the enemy is this close
+      "threatCheckSeconds": 1,
+      "regimentGap": 1.5,
+      "rankGap": 2
+    },
+    // TUNING: ranged fire by stance. "Hold" = Hold Ground stance and standing still; "advance" = shooting on the move.
+    "stance": {
+      "holdRangeMultiplier": 1.2,
+      "movedRangePenaltyTiles": 3,      // TUNING: archers lose 3 tiles of range right after moving ...
+      "settleSeconds": 5,               // ... and win it back over 5 seconds of standing still
+      "holdCooldownMultiplier": 0.67,
+      "holdSpreadMultiplier": 0.7,
+      "advanceRangeMultiplier": 0.85,
+      "advanceCooldownMultiplier": 1.25,
+      "advanceSpreadMultiplier": 1.4
+    }
+  },
+
+  "forts": {
+    "outpostCapacityRegiments": 1,
+    "strongholdCapacityRegiments": 5,
+    "strongholdActiveShooterSlots": 16,
+    "garrisonSize": 4,                     // TUNING: free permanent Garrison
+    "garrisonType": "Archers",
+    "garrisonRespawnSeconds": 30,
+    "garrisonQuietSeconds": 15,
+    "shooterDamageMultiplier": 4,          // TUNING: ...but each fort shot hits 4x as hard as a field arrow
+    "shooterCooldownSeconds": 3,           // TUNING: fort archers loose one arrow every 3s (field archers' volley rate doesn't apply)
+    "stationedFireRateMultiplier": 1.5,    // TUNING: Stationed archers shoot 1.5x faster than the Garrison (every 2s)
+    "meleeMissile": { "damage": 4, "penetration": 1, "range": 6, "cooldownSeconds": 4, "projectileSpeed": 14, "spreadPerTile": 0.06 },
+    "shooterHitChance": 0.25,
+    "stationedDamageTakenMultiplier": 0.5,
+    "strongholdUpgradeCost": { "Wood": 40, "Stone": 80, "Iron": 10 },
+    "strongholdUpgradeSeconds": 30,
+    "strongholdHp": 2000,
+    "alertCooldownSeconds": 20
+  }
+}

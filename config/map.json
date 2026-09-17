@@ -1,0 +1,21 @@
+// Procedural map generation. The same seed always produces the same map.
+{
+  "seed": 20260916,          // 0 = random seed each launch (shown in the top bar)
+  "width": 192,
+  "height": 192,
+  "keepInset": 28,           // distance of each Keep from its map corner
+  "keepClearRadius": 8,      // open grass guaranteed around each Keep
+  "noiseCellSize": 24,
+  "noiseOctaves": 3,
+  "waterLevel": 0.24,        // elevation below this = water (impassable)
+  "hillLevel": 0.66,
+  "mountainLevel": 0.78,     // elevation above this = mountain (impassable)
+  "forestLevel": 0.6,        // moisture above this = forest
+  "ridgeHalfThickness": 3,   // central mountain ridge that creates the chokepoints
+  "chokepointCount": 3,
+  "chokepointHalfWidth": 3,
+  "stoneClustersPerSide": 3,
+  "ironClustersPerSide": 2,
+  "clusterRadius": 2,
+  "maxGenerationAttempts": 8
+}

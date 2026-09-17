@@ -1,0 +1,174 @@
+// AI opponent tuning. Change "active" to Easy, Normal or Hard, or edit a preset's numbers.
+//
+// How attacks work (TUNING):
+//  - No attacks during the peace window (peaceSeconds).
+//  - Then attack size = firstWaveSoldiers + waveSoldiersPerMinute x aggression x strategy x (1 + provocation) x minutes,
+//    and the time between attacks shrinks from firstWaveIntervalSeconds towards minWaveIntervalSeconds.
+//  - Attacks up to raidMaxSoldiers are raids on your economy; bigger ones gather at a staging point and assault together.
+//  - Provocation: your Soldiers in the AI's town make it escalate faster (double before earlyProvocationSeconds), capped.
+//  - Each match the AI picks a strategy (weighted): Economy (boom, small early raids, faster growth later)
+//    or Rush (early Barracks, bigger early attacks, slower growth later).
+{
+  "active": "Normal",
+  "profiles": {
+    "Easy": {
+      "decisionIntervalSeconds": 1,
+      "buildOrder": [
+        { "building": "Woodcutter", "count": 2 }, { "building": "Quarry", "count": 1 }, { "building": "House", "count": 1 },
+        { "building": "Farm", "count": 1 }, { "building": "Woodcutter", "count": 3 }, { "building": "IronMine", "count": 1 },
+        { "building": "House", "count": 2 }, { "building": "Barracks", "count": 1 }, { "building": "Fletcher", "count": 1 },
+        { "building": "Archery", "count": 1 }, { "building": "Farm", "count": 2 }, { "building": "Smithy", "count": 1 },
+        { "building": "TaxOffice", "count": 1 }, { "building": "House", "count": 4 }
+      ],
+      "strategies": {
+        "Economy": { "weight": 3, "firstWaveMultiplier": 0.5, "escalationMultiplier": 1.2, "intervalMultiplier": 1.2, "extraPeaceSeconds": 120 },
+        "Rush":    { "weight": 1, "firstWaveMultiplier": 1.5, "escalationMultiplier": 0.8, "intervalMultiplier": 0.9 }
+      },
+      "maxConcurrentSites": 2,
+      "houseWhenFreeRoomBelow": 2,
+      "armyComposition": { "Spearmen": 3, "Archers": 2 },
+      "compositionSlack": 0.5,
+      "aggression": 0.5,
+      "peaceSeconds": 300,
+      "firstWaveSoldiers": 6,
+      "waveSoldiersPerMinute": 3,
+      "maxWaveSoldiers": 90,
+      "firstWaveIntervalSeconds": 240,
+      "minWaveIntervalSeconds": 150,
+      "waveIntervalShrinkPerMinute": 2,
+      "raidMaxSoldiers": 18,
+      "homeGuardSoldiers": 18,
+      "maxWaveWaitSeconds": 120,
+      "waveTimingJitter": 0.2,
+      "provocationPerSoldierSecond": 0.001,
+      "earlyProvocationSeconds": 600,
+      "maxProvocation": 0.5,
+      "provocationDecayPerMinute": 0.1,
+      "stagingDistance": 34,
+      "stagingMaxWaitSeconds": 45,
+      "marchWithoutEngaging": true,
+      "workersPerFarm": 8,                  // TUNING: Workers eat, so one Farm per this many Workers (plus one)
+      "maxSmithies": 2,
+      "extraBarracksFood": 250,
+      "maxBarracks": 1,
+      "defenseRadius": 22,
+      "expansionIntervalSeconds": 240,
+      "maxStorehouses": 2,
+      "logisticsDistance": 11,
+      "storehouseSpacing": 13,
+      "outpostAfterSeconds": 600,
+      "strongholdAfterSeconds": 1200,
+      "regimentsToStation": 1,
+      "buildRoads": true,
+      "roadTilesPerDecision": 8,
+      "storehouseMinimumStock": { "Wood": 20, "Stone": 10 }
+    },
+    "Normal": {
+      "decisionIntervalSeconds": 1,
+      "buildOrder": [
+        { "building": "Woodcutter", "count": 2 }, { "building": "Quarry", "count": 1 }, { "building": "Farm", "count": 1 },
+        { "building": "Barracks", "count": 1 }, { "building": "IronMine", "count": 1 }, { "building": "Fletcher", "count": 1 },
+        { "building": "Archery", "count": 1 }, { "building": "Smithy", "count": 1 }, { "building": "House", "count": 2 },
+        { "building": "Woodcutter", "count": 3 }, { "building": "ShieldMaker", "count": 1 }, { "building": "Farm", "count": 2 },
+        { "building": "TaxOffice", "count": 1 }, { "building": "IronMine", "count": 2 }, { "building": "Smithy", "count": 2 },
+        { "building": "Stable", "count": 1 }, { "building": "House", "count": 5 }
+      ],
+      "strategies": {
+        // Economy: boom first, small early raids, armies grow faster later. Rush: early Barracks, bigger early attacks.
+        "Economy": { "weight": 1, "firstWaveMultiplier": 0.75, "escalationMultiplier": 1.3, "intervalMultiplier": 1.0, "extraPeaceSeconds": 30 },
+        "Rush":    { "weight": 1, "firstWaveMultiplier": 2.0, "escalationMultiplier": 0.9, "intervalMultiplier": 0.75 }
+      },
+      "maxConcurrentSites": 4,
+      "houseWhenFreeRoomBelow": 3,
+      "armyComposition": { "Spearmen": 1, "Pikemen": 2, "MenAtArms": 3, "Archers": 1, "Longbowmen": 2, "Knights": 2 },
+      "compositionSlack": 0.5,
+      "aggression": 1.0,                    // TUNING: how fast attacks grow (Hard uses 1.6)
+      "peaceSeconds": 120,                  // no attacks for the first 2 minutes
+      "firstWaveSoldiers": 8,
+      "waveSoldiersPerMinute": 4,
+      "maxWaveSoldiers": 200,
+      "firstWaveIntervalSeconds": 120,
+      "minWaveIntervalSeconds": 60,
+      "waveIntervalShrinkPerMinute": 4,
+      "raidMaxSoldiers": 18,                // attacks this small raid the economy; bigger ones stage and assault the town
+      "homeGuardSoldiers": 6,
+      "maxWaveWaitSeconds": 75,
+      "waveTimingJitter": 0.2,
+      "provocationPerSoldierSecond": 0.003, // TUNING: how quickly attacking the AI's town makes it escalate
+      "earlyProvocationSeconds": 600,
+      "maxProvocation": 1.0,
+      "provocationDecayPerMinute": 0.03,
+      "stagingDistance": 34,
+      "stagingMaxWaitSeconds": 40,
+      "marchWithoutEngaging": true,
+      "workersPerFarm": 8,                  // TUNING: Workers eat, so one Farm per this many Workers (plus one)
+      "maxSmithies": 4,
+      "extraBarracksFood": 150,
+      "maxBarracks": 3,
+      "defenseRadius": 18,
+      "expansionIntervalSeconds": 120,
+      "maxStorehouses": 3,
+      "logisticsDistance": 11,
+      "storehouseSpacing": 13,
+      "outpostAfterSeconds": 240,
+      "strongholdAfterSeconds": 540,
+      "regimentsToStation": 1,
+      "buildRoads": true,
+      "roadTilesPerDecision": 12,
+      "storehouseMinimumStock": { "Wood": 30, "Stone": 20, "Food": 10 }
+    },
+    "Hard": {
+      "decisionIntervalSeconds": 1,
+      "buildOrder": [
+        { "building": "Woodcutter", "count": 2 }, { "building": "Quarry", "count": 1 }, { "building": "Farm", "count": 1 },
+        { "building": "Barracks", "count": 1 }, { "building": "IronMine", "count": 1 }, { "building": "Fletcher", "count": 1 },
+        { "building": "Archery", "count": 1 }, { "building": "Smithy", "count": 1 }, { "building": "House", "count": 2 },
+        { "building": "Woodcutter", "count": 3 }, { "building": "ShieldMaker", "count": 1 }, { "building": "Farm", "count": 2 },
+        { "building": "TaxOffice", "count": 1 }, { "building": "IronMine", "count": 2 }, { "building": "Smithy", "count": 2 },
+        { "building": "Stable", "count": 1 }, { "building": "House", "count": 5 }
+      ],
+      "strategies": {
+        "Economy": { "weight": 1, "firstWaveMultiplier": 0.75, "escalationMultiplier": 1.3, "intervalMultiplier": 1.0, "extraPeaceSeconds": 30 },
+        "Rush":    { "weight": 2, "firstWaveMultiplier": 2.0, "escalationMultiplier": 0.9, "intervalMultiplier": 0.75 }
+      },
+      "maxConcurrentSites": 4,
+      "houseWhenFreeRoomBelow": 3,
+      "armyComposition": { "Spearmen": 1, "Pikemen": 2, "MenAtArms": 3, "Archers": 1, "Longbowmen": 2, "Knights": 2 },
+      "compositionSlack": 0.5,
+      "aggression": 1.6,
+      "peaceSeconds": 120,
+      "firstWaveSoldiers": 8,
+      "waveSoldiersPerMinute": 4,
+      "maxWaveSoldiers": 200,
+      "firstWaveIntervalSeconds": 120,
+      "minWaveIntervalSeconds": 60,
+      "waveIntervalShrinkPerMinute": 4,
+      "raidMaxSoldiers": 18,
+      "homeGuardSoldiers": 6,
+      "maxWaveWaitSeconds": 75,
+      "waveTimingJitter": 0.2,
+      "provocationPerSoldierSecond": 0.003,
+      "earlyProvocationSeconds": 600,
+      "maxProvocation": 1.0,
+      "provocationDecayPerMinute": 0.03,
+      "stagingDistance": 34,
+      "stagingMaxWaitSeconds": 40,
+      "marchWithoutEngaging": true,
+      "workersPerFarm": 8,                  // TUNING: Workers eat, so one Farm per this many Workers (plus one)
+      "maxSmithies": 4,
+      "extraBarracksFood": 150,
+      "maxBarracks": 3,
+      "defenseRadius": 18,
+      "expansionIntervalSeconds": 120,
+      "maxStorehouses": 3,
+      "logisticsDistance": 11,
+      "storehouseSpacing": 13,
+      "outpostAfterSeconds": 240,
+      "strongholdAfterSeconds": 540,
+      "regimentsToStation": 1,
+      "buildRoads": true,
+      "roadTilesPerDecision": 12,
+      "storehouseMinimumStock": { "Wood": 30, "Stone": 20, "Food": 10 }
+    }
+  }
+}
